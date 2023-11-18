@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#home" class="nav-brand">Restaurant Name</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Restaurant Name</h1>
+            <p>Experience the finest dining at our restaurant.</p>
+            <a href="#reservations" class="btn">Make a Reservation</a>
+        </div>
+
+        <div class="restaurant-description">
+            <h2>About Our Restaurant</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed magna ac metus finibus faucibus. Donec
+                id enim ac quam tristique auctor. Maecenas sit amet nulla eu ipsum aliquam mollis. Donec ac metus eu
+                nunc congue semper.</p>
+        </div>
+
+        <div class="selling-points">
+            <h2>What Makes Us Special</h2>
+            <div class="card">
+                <img src="images/dish.jpg" alt="Dish Image">
+                <h3>Delicious Dishes</h3>
+                <p>Our menu features a variety of delectable dishes prepared with fresh, high-quality ingredients.</p>
+            </div>
+            <div class="card">
+                <img src="images/ingredients.jpg" alt="Ingredients Image">
+                <h3>Special Ingredients</h3>
+                <p>We source only the finest ingredients to ensure the exceptional quality of our dishes.</p>
+            </div>
+            <div class="card">
+                <img src="images/happy-customers.jpg" alt="Happy Customers Image">
+                <h3>Happy Customers</h3>
+                <p>Our commitment to excellent food and service has earned us a loyal customer base.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-categories">
+            <h3>Appetizers</h3>
+            <div class="menu-card">
+                <img src="images/appetizer1.jpg" alt="Appetizer Image">
+                <h4>Appetizer 1</h4>
+                <p>Description of Appetizer 1</p>
+                <span class="price">$10.99</span>
+            </div>
+            <div class="menu-card">
+                <img src="images/appetizer2.jpg" alt="Appetizer Image">
+                <h4>Appetizer 2</h4>
+                <p>Description of Appetizer 2</p>
+                <span class="price">$12.99</span>
+            </div>
+        </div>
+
+        <div class="menu-categories">
+            <h3>Main Course</h3>
+            <div class="menu-card">
+                <img src="images/main-course1.jpg" alt="Main Course Image">
+                <h4>Main Course 1</h4>
+                <p>Description of Main Course 1</p>
+                <span class="price">$18.99</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservations">
+        <h2>Make a Reservation</h2>
+
+        <form id="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="party-size">Party Size:</label>
+            <input type="number" id="party-size" name="party-size" min="1" max="1>
